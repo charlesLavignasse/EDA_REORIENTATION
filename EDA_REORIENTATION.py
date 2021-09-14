@@ -123,9 +123,13 @@ st.title("Exploration des différentes orientations professionnelles selon l'âg
 
 if st.checkbox('Voir le graphe'):
     #on réalise un subset du jeu de données en fonction du sexe
-    age_slider = st.slider("Age de séparation de l'échantillon",25,60,35)
-    sondage_J = sondage_clean.loc[sondage_clean['Age']<age_slider]
-    sondage_MJ = sondage_clean.loc[sondage_clean['Age']>age_slider]
+    # age_slider = st.slider("Age de séparation de l'échantillon",25,60,35)
+    # sondage_J = sondage_clean.loc[sondage_clean['Age']<age_slider]
+    # sondage_MJ = sondage_clean.loc[sondage_clean['Age']>age_slider]
+
+    sondage_J = sondage_clean.loc[sondage_clean['Age']<35]
+    sondage_MJ = sondage_clean.loc[sondage_clean['Age']>35]
+
 
     selectbox_S = st.selectbox('',('Avant la sélection','après la sélection'))
     if selectbox_S == 'Avant la sélection':
@@ -151,7 +155,7 @@ if st.checkbox('Voir le graphe'):
         st.pyplot(plot_Actuel_Hist)
     else :
         def Actuel_Hist():
-            fig, ax = plt.subplots(figsize= (30, 20))
+            fig, ax = plt.subplots(figsize= (50, 50))
             plt.xticks(fontsize=40,rotation=90)
             plt.yticks(fontsize=40)
             sns.histplot(data = sondage_M, x='Actuel',bins=1,hue='Actuel')
@@ -161,7 +165,7 @@ if st.checkbox('Voir le graphe'):
         plot_Actuel_Hist = Actuel_Hist()
         st.pyplot(plot_Actuel_Hist)
         def Souhaite_Hist():
-            fig, ax = plt.subplots(figsize= (30, 20))
+            fig, ax = plt.subplots(figsize= (50, 50))
             plt.xticks(fontsize=40,rotation=90)
             plt.yticks(fontsize=40)
             sns.histplot(data = sondage_M, x='Souhait',bins=1,hue='Souhait')
