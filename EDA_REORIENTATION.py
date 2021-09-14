@@ -93,8 +93,8 @@ if selectbox_S == 'Femmes':
         plt.xlabel("Souhait", fontsize=60)
         plt.ylabel("Nombre de personnes", fontsize=26)
         plt.tight_layout(True)
-    plot_Actuel_Hist = Souhaite_Hist()
-    st.pyplot(plot_Actuel_Hist)
+    plot_Souhaite_Hist = Souhaite_Hist()
+    st.pyplot(plot_Souhaite_Hist)
 else :
     def Actuel_Hist():
         fig, ax = plt.subplots(figsize= (30, 20))
@@ -114,8 +114,8 @@ else :
         plt.xlabel("Souhait", fontsize=60)
         plt.ylabel("Nombre de personnes", fontsize=26)
         plt.tight_layout(True)
-    plot_Actuel_Hist = Souhaite_Hist()
-    st.pyplot(plot_Actuel_Hist)
+    plot_Souhaite_Hist = Souhaite_Hist()
+    st.pyplot(plot_Souhaite_Hist)
 
 
 
@@ -151,8 +151,8 @@ if st.checkbox('Voir le graphe'):
             plt.xlabel("Souhait", fontsize=60)
             plt.ylabel("Nombre de personnes", fontsize=26)
             plt.tight_layout(True)
-        plot_Actuel_Hist = Souhaite_Hist()
-        st.pyplot(plot_Actuel_Hist)
+        plot_Souhaite_Hist = Souhaite_Hist()
+        st.pyplot(plot_Souhaite_Hist)
     else :
         def Actuel_Hist():
             fig, ax = plt.subplots(figsize= (50, 50))
@@ -164,7 +164,7 @@ if st.checkbox('Voir le graphe'):
             plt.tight_layout(True)
         plot_Actuel_Hist = Actuel_Hist()
         st.pyplot(plot_Actuel_Hist)
-        def Souhaite_Hist_H():
+        def Souhaite_Hist():
             fig, ax = plt.subplots(figsize= (50, 50))
             plt.xticks(fontsize=40,rotation=90)
             plt.yticks(fontsize=40)
@@ -172,5 +172,5 @@ if st.checkbox('Voir le graphe'):
             plt.xlabel("Souhait", fontsize=60)
             plt.ylabel("Nombre de personnes", fontsize=26)
             plt.tight_layout(True)
-        plot_Actuel_Hist = Souhaite_Hist()
-        st.pyplot(plot_Actuel_Hist)
+        plot_Souhaite_Hist = Souhaite_Hist()
+        st.pyplot(plot_Souhaite_Hist)
