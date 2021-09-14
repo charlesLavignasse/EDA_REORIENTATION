@@ -1,0 +1,31 @@
+ID,Nom et Prénom,Age,Sexe,Métier actuel,Le métier pour lequel vous aimeriez changer,Catégorie_Pro_Actuelle,Catégorie_Pro_Souhaitée
+1,MarCha,28,M,Neuropsychologue,Pilote de ligne,Psychologie,Aviation Civile
+2,JéLeME,27,M,Masseur-kinésithérapeute ,"Métier dans le domaine du sport (management, éducateur et / ou économie) ",Auxiliaire_Médical,Educateur_Sportif
+3,PhYa,28,M,Conseiller environnement , Charge de projet - Bureau d’études environnement,Ingénieurie ,Ingénieurie
+4,NePi,33,F,Masseur Kinésithérapeute ,Accompagnante en parentalité ,Auxiliaire_Médical,Accompagnement_à_la_personne
+5,FoLuc,33,F,Masseur-kinésithérapeute ,Aucun,Auxiliaire_Médical,Aucun
+6,LaFan,34,F,Kinésithérapeute ,Aucun,Auxiliaire_Médical,Aucun
+7,FoEm,31,M,militaire ,Aucun,Millitaire,Aucun
+8,BlaFabi,57,F,Commerciale grand ouest et région parisienne,Commerciale sedentaire,Commercial,Commercial
+9,PerLuc,31,F,Sans emploi,Sexologue ( rêve très très lointain !),Sans_emploi,Medecine_Parallèle
+10,PerJu,33,F,Aide familiale ,Aucun,Accompagnement_à_la_personne,Aucun
+11,PluMa,26,F,Ingénieure écologue ,Aucun,Ingénieurie ,Aucun
+12,RoCha,30,F,Pâtissière,Décoratrice intérieure,Artisanat,Décoration
+13,AnVe,32,M,Analyste de charts musicaux,Musicien,Ingénieurie ,Musicien
+14,KaYa,27,F,Ingénieure d'étude en écologie,Médiatrice scientifique,Ingénieurie ,Médiation_Scientifique
+15,NeMa,27,M,Consultant Sap,Metier liant le bois et l informatique,Informatique,Informatique
+16,PDRJB,27,M,Docteur en médecine ,Aucun,Profession Médicale,Aucun
+17,PicMo,27,M,Acheteuse bois,Acheteuse bois mais dans une entreprise à mon compte,Commercial,Commercial 
+18,HeSa,34,F,Professeur de français ,Restauratrice de meubles anciens ,Enseignement_Secondaire,Artisanat
+19,AlvCa,43,M,Ingenieur informatiqus,Docteur en médecine ,Informatique,Professionnel_de_santé
+20,LacLu,27,M,Doctorant chercheur,Enseignement ou pension canine,Recherche,Enseignement_Supérieur
+21,JaAu,37,F,Institutrice primaire ,"Secrétaire, vendeuse papeterie ou autre ",Enseignement_Primaire,Vente
+22,CrMa ,27,F,Doctorante contractuelle ,Enseignante-chercheuse en université ,Recherche,Enseignement_Supérieur
+23,RoLe,33,F,Aide a domicile ,Assistante maternelle ,Accompagnement à la personne,Auxiliaire_de_puericulture
+24,DefJe,33,F,Assistante Sociale,Digital nomade,Accompagnement_à_la_personne,Informatique
+25,BaMi,28,M,Professeur ,Aucun,Enseignement_Secondaire,Aucun
+26,CaPi,33,F,Kinésithérapeute,Aucun,Professionnel de santé,Aucun
+27,PaJo,30,M,Docteur en physique,Futur Physicien médical ,Recherche,Auxiliaire_Médical
+28,OpMo,32,,Infirmière ,Praticienne Naturopathe ,Auxiliaire_Médical,Medecine_Parallèle
+29,NietGa,26,,Aide soignante,Animatrice socio culturelle,Auxiliaire_Médical,Animation
+30,PrJo,26,,Aide-soignante ,Infirmière ,Auxiliaire_Médical,Auxiliaire_Médical
