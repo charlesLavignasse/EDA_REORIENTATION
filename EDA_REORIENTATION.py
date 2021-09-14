@@ -7,7 +7,7 @@ import matplotlib
 from matplotlib.ticker import EngFormatter
 import base64
 from wordcloud import WordCloud
-matplotlib.use('TkAgg')
+matplotlib.use('Agg')
 sns.reset_orig()
 
 chemin_Data = "/app/Data/"
