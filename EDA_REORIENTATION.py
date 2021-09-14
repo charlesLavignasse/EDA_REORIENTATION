@@ -12,7 +12,7 @@ sns.reset_orig()
 
 chemin_Data = "/app/Data/"
 
-sondage = pd.read_csv(chemin_Data + "Reorientation Professionnelle.csv",error_bad_lines=False)
+sondage = pd.read_csv('\DATA\Reorientation Professionnelle.csv',error_bad_lines=False)
 #Ici, on drop les columns inutiles
 sondage_clean = sondage.drop(columns=['Nom et Prénom','Métier actuel', 'Le métier pour lequel vous aimeriez changer'])
 #Ici, on renomme les deux dernières colonnes pour plus de simplicité
