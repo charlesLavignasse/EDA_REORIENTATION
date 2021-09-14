@@ -44,6 +44,7 @@ selectbox_WD = st.selectbox('Situation Professionnelle : ',('Actuelle','Souhait�
 if selectbox_WD == 'Actuelle':
     st.write('Nuage de mots regroupant les situations professionnelles actuelles des participants')
     #Nuage de mots sur Actuel
+    @st.cache
     def wdcld_Actuel():
         text =  ' '.join(sondage_clean["Actuel"])
         exclure_mots = ['d', 'du', 'de', 'la', 'des', 'le', 'et', 'est', 'elle', 'une', 'en', 'que', 'aux', 'qui', 'ces', 'les', 'dans', 'sur', 'l', 'un', 'pour', 'par', 'il', 'ou', 'à', 'ce', 'a', 'sont', 'cas', 'plus', 'leur', 'se', 's', 'vous', 'au', 'c', 'aussi', 'toutes', 'autre', 'comme']
@@ -56,6 +57,7 @@ if selectbox_WD == 'Actuelle':
 else :
     st.write('Nuage de mots qui regroupe les situations professionnelles actuelles des participants')
 #Nuage de mots sur Actuel
+    @st.cache
     def wdcld_Souhait():
         text =  ' '.join(sondage_clean["Souhait"])
         exclure_mots = ['d', 'du', 'de', 'la', 'des', 'le', 'et', 'est', 'elle', 'une', 'en', 'que', 'aux', 'qui', 'ces', 'les', 'dans', 'sur', 'l', 'un', 'pour', 'par', 'il', 'ou', 'à', 'ce', 'a', 'sont', 'cas', 'plus', 'leur', 'se', 's', 'vous', 'au', 'c', 'aussi', 'toutes', 'autre', 'comme']
@@ -73,6 +75,7 @@ sondage_M = sondage_clean.loc[sondage_clean['Sexe']=='M']
 
 selectbox_S = st.selectbox('',('Femmes','Hommes'))
 if selectbox_S == 'Femmes':
+        @st.cache
         def Actuel_Hist():
             fig, ax = plt.subplots(figsize= (50, 50))
             plt.xticks(fontsize=40,rotation=90)
@@ -83,6 +86,8 @@ if selectbox_S == 'Femmes':
             plt.tight_layout(True)
         plot_Actuel_Hist = Actuel_Hist()
         st.pyplot(plot_Actuel_Hist)
+        
+        @st.cache
         def Souhaite_Hist():
             fig, ax = plt.subplots(figsize= (50, 50))
             plt.xticks(fontsize=40,rotation=90)
@@ -94,6 +99,7 @@ if selectbox_S == 'Femmes':
         plot_Actuel_Hist = Souhaite_Hist()
         st.pyplot(plot_Actuel_Hist)
 else :
+        @st.cache
         def Actuel_Hist():
             fig, ax = plt.subplots(figsize= (30, 20))
             plt.xticks(fontsize=40,rotation=90)
@@ -104,6 +110,7 @@ else :
             plt.tight_layout(True)
         plot_Actuel_Hist = Actuel_Hist()
         st.pyplot(plot_Actuel_Hist)
+        @st.cache
         def Souhaite_Hist():
             fig, ax = plt.subplots(figsize= (30, 20))
             plt.xticks(fontsize=40,rotation=90)
@@ -126,6 +133,7 @@ sondage_MJ = sondage_clean.loc[sondage_clean['Age']>age_slider]
 
 selectbox_S = st.selectbox('',('Avant la sélection','après la sélection'))
 if selectbox_S == 'Avant la sélection':
+        @st.cache
         def Actuel_Hist():
             fig, ax = plt.subplots(figsize= (50, 50))
             plt.xticks(fontsize=40,rotation=90)
@@ -147,6 +155,7 @@ if selectbox_S == 'Avant la sélection':
         plot_Actuel_Hist = Souhaite_Hist()
         st.pyplot(plot_Actuel_Hist)
 else :
+        @st.cache
         def Actuel_Hist():
             fig, ax = plt.subplots(figsize= (30, 20))
             plt.xticks(fontsize=40,rotation=90)
@@ -157,6 +166,7 @@ else :
             plt.tight_layout(True)
         plot_Actuel_Hist = Actuel_Hist()
         st.pyplot(plot_Actuel_Hist)
+        @st.cache
         def Souhaite_Hist():
             fig, ax = plt.subplots(figsize= (30, 20))
             plt.xticks(fontsize=40,rotation=90)
