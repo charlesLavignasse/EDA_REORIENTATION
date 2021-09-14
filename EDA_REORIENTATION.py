@@ -10,7 +10,7 @@ from wordcloud import WordCloud
 matplotlib.use('Agg')
 sns.reset_orig()
 
-chemin_Data = "/app/Data/"
+
 
 sondage = pd.read_csv('Reorientation Professionnelle.csv',error_bad_lines=False)
 #Ici, on drop les columns inutiles
@@ -18,7 +18,7 @@ sondage_clean = sondage.drop(columns=['Nom et Prénom','Métier actuel', 'Le mé
 #Ici, on renomme les deux dernières colonnes pour plus de simplicité
 sondage_clean.rename(columns={"Catégorie_Pro_Actuelle": "Actuel", "Catégorie_Pro_Souhaitée": "Souhait"},inplace=True)
 
-#chemin_Data=
+
 
 st.title("Analyse des souhaits de réorientation professionnelle d'un échantillon d'une trentaine de personne")
 
@@ -161,71 +161,9 @@ else :
             fig, ax = plt.subplots(figsize= (30, 20))
             plt.xticks(fontsize=40,rotation=90)
             plt.yticks(fontsize=40)
-            sns.histplot(data = sondage_M, x='Actuel',bins=1,hue='Souhait')
+            sns.histplot(data = sondage_M, x='Souhait',bins=1,hue='Souhait')
             plt.xlabel("Souhait", fontsize=60)
             plt.ylabel("Nombre de personnes", fontsize=26)
             plt.tight_layout(True)
         plot_Actuel_Hist = Souhaite_Hist()
         st.pyplot(plot_Actuel_Hist)
-# def Actuel_Hist():
-#     fig, ax = plt.subplots(figsize= (30, 20))
-#     plt.xticks(fontsize=40,rotation=90)
-#     plt.yticks(fontsize=40)
-#     sns.histplot(data = sondage_clean, x='Actuel',bins=2,hue = 'Actuel')
-#     plt.xlabel("Actuel", fontsize=60)
-#     plt.ylabel("Nombre de personnes", fontsize=26)
-#     plt.tight_layout(True)
-# plot_Actuel_Hist = Actuel_Hist()
-# st.pyplot(plot_Actuel_Hist)
-
-# def Age_Hist():
-#     fig, ax = plt.subplots(figsize= (30, 20))
-#
-#     sns.histplot(data = sondage_clean, x='Age',bins=50,kde=True)
-#     plt.xlabel("Age", fontsize=60)
-#     plt.ylabel("Nombre de personnes", fontsize=60)
-#     plt.xticks(fontsize=15,rotation=60,ticks=(np.arange(25,60, step = 1)))
-#     plt.xticks(fontsize=40)
-# plot_Age_Hist = Age_Hist()
-# st.pyplot(plot_Age_Hist)
-# st.write("La majorité de l'échantillon se situe autour de 30 ans")
-
-# def Sexe_Hist():
-#     fig, ax = plt.subplots(figsize= (30, 20))
-#     plt.xticks(fontsize=40)
-#     plt.yticks(fontsize=40)
-#     sns.histplot(data = sondage_clean, x='Sexe',bins=2,hue = 'Sexe')
-#     plt.xlabel("Sexe", fontsize=60)
-#     plt.ylabel("Nombre de personnes", fontsize=26)
-# plot_Sexe_Hist = Sexe_Hist()
-# st.pyplot(plot_Sexe_Hist)
-
-
-
-
-
-
-
-# def Age_Actuel():
-#     fig, ax = plt.subplots(figsize= (30, 20))
-#     sns.barplot(x = 'Actuel', y = "Age", data = sondage_clean,hue='Actuel', dodge = False)
-#     plt.xticks(fontsize=19,rotation=90)
-#     plt.yticks(fontsize=17)
-#     plt.xlabel("Actuel", fontsize=24)
-#     plt.ylabel("Age", fontsize=26)
-#     plt.title("Représentation du Actuel pro en fonction de l'age", fontsize=28)
-#     plt.show()
-# plot_Age_Actuel = Age_Actuel()
-# st.pyplot(plot_Age_Actuel)
-
-# def Age_Souhait():
-#     fig, ax = plt.subplots(figsize= (30, 20))
-#     sns.barplot(x = 'Souhait', y = "Age", data = sondage_clean,hue='Souhait', dodge = False)
-#     plt.xticks(fontsize=19,rotation=90)
-#     plt.yticks(fontsize=17)
-#     plt.xlabel("Souhait", fontsize=24)
-#     plt.ylabel("Age", fontsize=26)
-#     plt.title("Représentation du souhait pro en fonction de l'age", fontsize=28)
-#     plt.show()
-# plot_Age_Souhait = Age_Souhait()
-# st.pyplot(plot_Age_Souhait)
