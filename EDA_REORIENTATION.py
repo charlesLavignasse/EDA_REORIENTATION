@@ -122,7 +122,10 @@ else :
 st.title("Exploration des différentes orientations professionnelles selon l'âge des participants")
 
 if st.checkbox('Voir le graphe'):
-on réalise un subset du jeu de données en fonction du sexe
+# on réalise un subset du jeu de données en fonction du sexe
+
+
+
 age_slider = st.slider("Age de séparation de l'échantillon",25,60,35)
 sondage_J = sondage_clean.loc[sondage_clean['Age']<age_slider]
 sondage_MJ = sondage_clean.loc[sondage_clean['Age']>age_slider]
