@@ -97,7 +97,7 @@ if selectbox_S == 'Femmes':
     st.pyplot(plot_Souhaite_Hist_F)
 else :
     def Actuel_Hist_M():
-        fig, ax = plt.subplots(figsize= (30, 20))
+        fig, ax = plt.subplots(figsize= (15, 15))
         plt.xticks(fontsize=40,rotation=90)
         plt.yticks(fontsize=40)
         sns.histplot(data = sondage_M, x='Actuel',bins=1,hue='Actuel')
@@ -107,7 +107,7 @@ else :
     plot_Actuel_Hist_M = Actuel_Hist_M()
     st.pyplot(plot_Actuel_Hist_M)
     def Souhaite_Hist_M():
-        fig, ax = plt.subplots(figsize= (30, 20))
+        fig, ax = plt.subplots(figsize= (15, 15))
         plt.xticks(fontsize=40,rotation=90)
         plt.yticks(fontsize=40)
         sns.histplot(data = sondage_M, x='Actuel',bins=1,hue='Souhait')
@@ -147,7 +147,7 @@ if selectbox_S == 'Avant la sélection':
         plt.ylabel("Nombre de personnes", fontsize=26)
         plt.tight_layout(True)
     plot_Actuel_Hist_J = Actuel_Hist_J()
-    st.pyplot(plot_Actuel_Hist__J)
+    st.pyplot(plot_Actuel_Hist_J)
     def Souhaite_Hist_J():
         fig, ax = plt.subplots(figsize= (15, 15))
         plt.xticks(fontsize=40,rotation=90)
