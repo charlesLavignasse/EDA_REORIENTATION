@@ -121,7 +121,7 @@ else :
 
 st.title("Exploration des différentes orientations professionnelles selon l'âge des participants")
 
-if st.checkbox('Voir le graphe'):
+
 # on réalise un subset du jeu de données en fonction du sexe
 
 
