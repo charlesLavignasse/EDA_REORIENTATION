@@ -127,7 +127,7 @@ st.title("Exploration des différentes orientations professionnelles selon l'âg
 # sondage_J = sondage_clean.loc[sondage_clean['Age']<age_slider]
 # sondage_MJ = sondage_clean.loc[sondage_clean['Age']>age_slider]
 
-sondage_J = sondage_clean.loc[sondage_clean['Age']<35]
+sondage_J = sondage_clean.loc[sondage_clean['Age']=<35]
 sondage_MJ = sondage_clean.loc[sondage_clean['Age']>35]
 
 
@@ -136,8 +136,8 @@ sondage_MJ = sondage_clean.loc[sondage_clean['Age']>35]
 
 
 
-selectbox_S = st.selectbox('',('Avant la sélection','après la sélection'))
-if selectbox_S == 'Avant la sélection':
+selectbox_S = st.selectbox('',('-35ans','+35ans'))
+if selectbox_S == '-35ans':
     def Actuel_Hist_J():
         fig, ax = plt.subplots(figsize= (15, 15))
         plt.xticks(fontsize=40,rotation=90)
